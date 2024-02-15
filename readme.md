@@ -7,16 +7,16 @@ This is a voxel cellular automata program which runs entirely on compute shaders
 ## Video Preview
 
 ### Sand
-<img src="./preview/falling.gif?raw=true"  width="600" height="600">
+<img src="./preview/falling.gif?raw=true">
 
 ### Fluid Flowing
-<img src="./preview/flowing.gif?raw=true"  width="600" height="600">
+<img src="./preview/flowing.gif?raw=true">
 
 ### Fluid Filling Space
-<img src="./preview/filling.gif?raw=true"  width="600" height="600">
+<img src="./preview/filling.gif?raw=true">
 
 ### Water/Lava Interacting
-<img src="./preview/colliding.gif?raw=true"  width="600" height="600">
+<img src="./preview/colliding.gif?raw=true">
 
 ## How It Works
 
