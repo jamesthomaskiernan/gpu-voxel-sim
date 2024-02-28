@@ -36,12 +36,14 @@ If the user is clicks left mouse button, then the `pick` dispatch thread inside 
 
 ## To Build
 
+Please note a binary is available for download under the releases section, if you wish to just run the program and want to avoid building altogether. If you do wish to build, follow the instructions below.
+
 1. Specify desired settings in `/code/settings.h`.
 2. Navigate to `/build` and run `cmake .` to generate makefile.
 3. Inside `/build` run `make` to build using makefile.
 4. Executable should be generated in `/build`.
 
-Alternatively, CMake could also be able to generate a visual studio project with `cmake -B Builds -G 'Visual Studio 17 2022'`.
+Alternatively, CMake could also be used to generate a visual studio project with `cmake -B Builds -G 'Visual Studio 17 2022'`. Make sure to replace 17 and 2022 with whichever visual studio version you are using.
 
 ## Controls
 
