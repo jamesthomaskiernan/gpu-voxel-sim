@@ -32,7 +32,7 @@ After the simulation is stepped, the `compute` dispatch thread inside `mesh_gene
 A DrawInstancedIndirect call is made to render the world. The call is indirect since the vertex count isn't known by the CPU. Instead, that data is copied from the `vertexCountBuffer` into an arguments buffer. This arguments buffer is then passed into the DrawInstancedIndirect method. The world mesh's vertex and pixel shaders are inside `/shaders/voxel.hlsl`. Inside the vertex function, VertexID is used to find the appropriate triangle inside `triangleBuffer`. The pixel function then colors the voxels according to type.
 
 ### Placing Voxels
-If the user is clicks left mouse button, then the `pick` dispatch thread inside `picker.hlsl` is run to place voxels in the world. Relevant data like camera position, camera forward vector, and voxel type, are written into `pickBuffer` and then accessed inside `picker.hlsl`. This function casts a ray out from the camera until it hits a voxel. Then it sets any surrounding voxels within a certain radius to the user selected voxel type.
+If the user clicks left mouse button, then the `pick` dispatch thread inside `picker.hlsl` is run to place voxels in the world. Relevant data like camera position, camera forward vector, and voxel type, are written into `pickBuffer` and then accessed inside `picker.hlsl`. This function casts a ray out from the camera until it hits a voxel. Then it sets any surrounding voxels within a certain radius to the user selected voxel type.
 
 ## To Build
 
@@ -60,7 +60,7 @@ Since all mesh generation and simulation steps run on the GPU, performance is ve
 
 This repo uses the DirectXMath and SimpleMath libraries. They can be found inside `/dependencies`. You will also need D3D11 installed.
 
-## Requirements
+## System Requirements
 
 I would recommend having at least 512MB of VRAM to run this program. If the world size is increased, more VRAM will be needed as all world data is stored in buffers on the GPU.
 
